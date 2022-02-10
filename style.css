@@ -10,7 +10,7 @@ body {
 
 header {
   font-family: "Raleway", sans-serif;
-  animation: headerAnimation 3s ease-in-out;
+  animation: headerAnimation 1s ease-in-out;
 }
 
 .img-logo {
@@ -67,11 +67,19 @@ a:hover:before {
 
 h1 {
   color: #fff;
+  animation: buttonAnimation 1s ease-in-out;
+}
+
+.container-description > p {
+  color: #fff;
+  padding-top: 20px;
+  animation: buttonAnimation 1.5s ease-in-out;
 }
 
 p {
   color: #fff;
-  padding-top: 20px;
+  padding-top: 10px;
+  font-family: "Raleway", sans-serif;
 }
 
 .button-started {
@@ -85,7 +93,7 @@ p {
   background-color: hsl(198, 60%, 50%);
   font-weight: 600;
   align-items: center;
-  animation: buttonAnimation 1s ease-in-out;
+  animation: buttonAnimation 2s ease-in-out;
 }
 
 .button-started:hover {
@@ -93,29 +101,51 @@ p {
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
   cursor: pointer;
-}   
+}
 
 .button-started:active {
-    opacity: 0.2;
+  opacity: 0.2;
 }
 
 .img-arrow {
   width: 30px;
-  display: none;
 }
 
 main {
-  background-image: url(./img/bg-curvy-desktop.svg);
+  margin-top: 200px;
+  align-items: center;
 }
 
-@keyframes buttonAnimation {
-  from {
-    background-color: hsla(212, 96%, 41%, 0.479);  
-  }
+h2 {
+  color: #fff;
+}
+
+.container-main-benefits {
+  display: flex;
+  margin-left: 220px;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.container-benefits-file,
+.container-benefits-security,
+.container-benefits-collaboration,
+.container-benefits-store {
+  width: 580px;
+  text-align: center;
+  align-items: center;
+  margin-right: 100px;
+  scroll-behavior: smooth;
 }
 
 @keyframes headerAnimation {
   from {
     transform: translateY(-110%);
+  }
+}
+
+@keyframes buttonAnimation {
+  from {
+    transform: translateY(-1000%);
   }
 }
