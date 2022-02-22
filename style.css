@@ -114,7 +114,6 @@ p {
 main {
   margin-top: 200px;
   align-items: center;
-  background-repeat: no-repeat;
 }
 
 h2,
@@ -260,7 +259,7 @@ h4 {
   padding: 50px;
 }
 
-.container-locazation{
+.container-locazation {
   margin-top: 30px;
   display: flex;
   width: 400px;
@@ -277,17 +276,113 @@ h4 {
 
 .container-info-politic {
   display: flex;
+  margin-left: 100px;
+  margin-bottom: 120px;
 }
 
-.icon-location, .icon-phone, .icon-email {
-  margin-right: 30px;
-  width: 20px;
-  height: 20px;
-}
+@media (max-width: 400px) {
+  .container-navbar {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+  }
 
-.container-info-telephone, .container-info-email {
-  display: flex;
-  align-items: center;
+  .navbar {
+    padding-top: 40px;
+    padding-left: 40px;
+  }
+
+  .container-description p {
+    font-size: 16px;
+  }
+
+  .illustration-intro {
+    width: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .container-main-benefits {
+    margin: 0 auto;
+    display: block;
+    margin: 0;
+  }
+
+  .container-benefits-file,
+  .container-benefits-security,
+  .container-benefits-collaboration,
+  .container-benefits-store {
+    width: 400px;
+    margin-top: 20px;
+  }
+
+  .container-productive {
+    text-align: center;
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .bg-quotes {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .container-feedbacks {
+    display: block;
+    margin: 0;
+  }
+
+  .container-profile-user {
+    width: 100px;
+  }
+
+  .illustration-stay {
+    width: 350px;
+  }
+
+  footer {
+    margin-top: 100px;
+  }
+
+  .container-search {
+    width: 390px;
+  }
+
+  .input-search,
+  .button-started-search {
+    width: 300px;
+    margin-top: 20px;
+  }
+
+  .txt-productive {
+    text-align: left;
+  }
+
+  .container-description-finish {
+    margin-top: 80px;
+    padding-top: 50px;
+    text-align: center;
+    background-color: hsl(218, 28%, 13%);
+  }
+
+  .container-localization, .container-telephone, .container-email {
+    text-align: center;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+  .container-social-networks {
+    margin-top: 70px;
+  }
+
+  .social-network-logo {
+    width: 50px;
+    padding-left: 15px;
+  }
 }
 
 @keyframes headerAnimation {
